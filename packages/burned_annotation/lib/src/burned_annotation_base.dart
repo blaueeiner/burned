@@ -1,6 +1,16 @@
-// TODO: Put public facing types in this file.
-
-/// Checks if you are awesome. Spoiler: you are.
-class Awesome {
-  bool get isAwesome => true;
+class BurnedModel {
+  const BurnedModel(this.type);
+  final Type type;
 }
+
+class BurnedEntity {
+  const BurnedEntity();
+}
+
+const burnedEntity = BurnedEntity();
+
+class Burned {
+  const Burned();
+}
+
+const burned = Burned();
