@@ -1,8 +1,11 @@
+import 'package:meta/meta.dart';
+
 class BurnedModel {
   const BurnedModel(this.type);
   final Type type;
 }
 
+@immutable
 class BurnedEntity {
   const BurnedEntity();
 }

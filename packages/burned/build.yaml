@@ -1,0 +1,9 @@
+builders:
+  burned:
+    import: "package:burned/burned.dart"
+    builder_factories: ["burned"]
+    build_extensions: {".dart": [".burned.g.part"]}
+    auto_apply: dependents
+    build_to: cache
+    # To copy the `.g.part` content into `.g.dart` in the source tree
+    applies_builders: ["source_gen|combining_builder"]
